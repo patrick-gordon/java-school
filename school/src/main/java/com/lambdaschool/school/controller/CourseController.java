@@ -27,6 +27,7 @@ public class CourseController
     @GetMapping(value = "/studcount", produces = {"application/json"})
     public ResponseEntity<?> getCountStudentsInCourses()
     {
+        System.out.println("Endpoint");
         return new ResponseEntity<>(courseService.getCountStudentsInCourse(), HttpStatus.OK);
     }
 
