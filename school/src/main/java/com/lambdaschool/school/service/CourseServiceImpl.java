@@ -27,6 +27,7 @@ public class CourseServiceImpl implements CourseService
     @Override
     public ArrayList<CountStudentsInCourses> getCountStudentsInCourse()
     {
+        System.out.println("Service");
         return courserepos.getCountStudentsInCourse();
     }
 
